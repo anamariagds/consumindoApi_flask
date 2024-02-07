@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}   
+<div class="row">
+  {% for episode in episodes %}
+    <div class="col-sm-4 col-6">
+      <div class="card text-bg-primary mb-3" style="max-width: 20rem;">
+        <div class="card-body">
+          <h3 class="card-title">{{episode.name}}</h3>
+          <h4 class="h5">{{episode.air_date}}</h4>
+          <h4 class="h5">{{episode.episode}}</h4>  
+        </div>
+      </div>          
+    </div>                    
+  {%endfor%}    
+</div>
+{% endblock %}
